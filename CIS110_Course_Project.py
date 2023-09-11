@@ -1,1 +1,32 @@
+print(f" Greetings! I have an amazing story for you about a defiant teenage alien. I can't wait to tell you!")
+print(f" Before I tell you my story I'd like to ask you a few questions.")
+print(f" After typing your answer please press enter to move ahead")
+# 5 Questions before the story begins 
+childName =input("\nWhat is your favorite boy's name?")
+print(f" {childName}, That's a great name.")
+shipColor =input("\nWhat is your favorite color?")
+print(f" Wow,{shipColor} is so pretty. My favorite is pink.")
+snackType =input("\nWhat is your least favorite snack?")
+print(f" Yeah, {snackType} are gross. I don't like them either.")
+minutesWaited =input("\nPick a number between 1 and 59.")
+print(f" {minutesWaited}, Are you a mind reader? That's the exact number I had in mind!")
+pizzaPlace =input("\nWhat is your favorite pizza place?")
+print(f"{pizzaPlace} is amazing. Let's start the story!")
+#Story begins   
+print(f"Our story begins far far away on the planet Mars,")
+print(f"where we meet a defiant teenage alien named Loni, who just turned 18.")
+print(f"In case you don't know on Mars teenagers are finally able to drive a flying saucer.")
+print(f"So Loni got a brand new top of the line {shipColor} flying saucer.")
+print(f"He wanted so badly to fly his new saucer around for a spin but his parents said no.")
+print(f"So after his mom and dad went to sleep in their sound proof cryopods, Loni snuck to the gargage.")
+print(f"Loni knows his parents won't hear the flying saucer start. 'It's just a quick spin', He thinks as he starts his new {shipColor} saucer.")
+print(f"Loni sets off for an adventure zooming through space, going faster than he was ever allowed with his mom.")
+print(f"When out of no where there's a sattelite hurdling toward his new saucer")
+print(f"Loni steers hard to the left and the sattelite just misses him.")
+print(f"Loni exclaims'Wow, that was close.' and corrects his path only to see the Earth getting larger and larger as he is now way off course.")
+print(f"Loni starts to cry as he is unable to slow the saucer down in time and he knows he is headed for a crash.")
+print(f"The saucer slams into the ground with a loud wobble.")
+print(f"Alone, the young alien, collects hisself and starts to exit the saucer to decide if he can just fly home.")
 
+
+    
