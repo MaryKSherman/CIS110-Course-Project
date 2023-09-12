@@ -1,3 +1,6 @@
+from asyncio import _leave_task
+
+
 print(f" Greetings! I have an amazing story for you about a defiant teenage alien. I can't wait to tell you!")
 print(f" Before I tell you my story I'd like to ask you a few questions.")
 print(f" After typing your answer please press enter to move ahead")
@@ -27,6 +30,62 @@ print(f"Loni exclaims'Wow, that was close.' and corrects his path only to see th
 print(f"Loni starts to cry as he is unable to slow the saucer down in time and he knows he is headed for a crash.")
 print(f"The saucer slams into the ground with a loud wobble.")
 print(f"Alone, the young alien, collects hisself and starts to exit the saucer to decide if he can just fly home.")
-
-
-    
+print(f"He hears a small boy in the distance but the boy is slowly approaching.")
+print(f"Loni has never met a human before and he is scared of the small boy.")
+meetBoy = input(f"\nShould Loni speak to the human child? Type yes or no  ")
+#Decision one
+if meetBoy == "yes":
+    print(f"\nA frightened Loni slowly crawls out of his saucer to stand face to face with a small human child.")
+    print(f"The small human boy greets Loni. 'Hi, my name is {childName}.Are you okay?' he said.")
+    print(f"Loni responds,'Hi, I am Loni and I think I am okay but I can't fly home in the saucer.'")
+    print(f"{childName} asks Loni if he wants to call his mother for help with his saucer.")
+else:
+    print(f"The frightened Loni crawls to the farther part of the ship away from the noise to hide until it leaves")
+    print(f"After the small human boy left the area Loni waited a while longer until he thought it was safe.")
+    print(f"Loni inspects his saucer and knows it is broken beyond being flyable.")
+    print(f"'Maybe I should call my mom', Loni thinks.")
+#Decision two
+callMom = input(f"Should Loni call his mom? Type yes or no... ")
+if callMom == "yes":
+    print(f"Loni decided to call his mom")
+else:
+    print(f"Loni was too scared of getting in trouble to call his mom")
+# Alternative Endings
+if meetBoy == "yes" and callMom == "yes":
+    print(f"Loni says, 'Yeah ,{childName} I think I probably should. Do you know where I can find a phone?'")
+    print(f"{childName} says,'As a matter of fact, I do. Let's walk to the store to get some {snackType} and we can use their phone.'")
+    print(f"So Loni and {childName} head to the store and call Loni's mom.") 
+    print(f"Loni spoke with his mother who said she was on her way with a tow saucer.")
+    print(f"The boys ate their {snackType} and Loni's mom showed up after {minutesWaited} with a tow waucer.")
+    print(f"Loni and his mom stopped for pizza at {pizzaPlace} and got decontaminated on their way home.")
+    print(f"Loni's new {shipColor} saucer was totaled but his mom was just happy to have him home safely.")
+    print(f"THE END")
+elif meetBoy == "yes" and callMom == "no":
+    print(f"'No, she's gonna be so mad at me. Her and dad told me I couldn't go flying tonight.'Loni admits")
+    print(f"{childName} suggests' okay well let's go get pizza and then go to my house. Then we can figure out how to get you home.'")
+    print(f"Loni says'Can we go to {pizzaPlace}? It is the only Earth pizza place I know.'")
+    print(f"{childName} says'sure, let's go' and off they head toward {pizzaPlace}.")
+    print(f"The boys eat some pizza and sodas. Soon {childName}'s mom shows up to get her son.")
+    print(f"{childName} asks about taking his friend and his mom won't allow it, but calls the FBI to report the alien encounter.")
+    print(f"The FBI agents come pick up Loni and take  him back to his ship where they call his mom.")
+    print(f"His mother makes a deal that they can keep his saucer in exchange for allowing her to take him home.")
+    print(f"His mom was so relived he was okay that she didn't even scold him, just hurriedly got him back home.")
+    print(f"THE END")
+elif meetBoy == "no" and callMom == "yes":
+    print(f"Loni cowered in the back of his ship decided to use the ships sattelite phone to call his mother.")
+    print(f"Loni dialed the phone number for his mom's cryopod and she picked up panicked on the first ring.")
+    print(f"He told her what had happened and how scared he was and she told him she was on her way to just sit tight.")
+    print(f"Loni stayed in his ship waiting for his mom for {minutesWaited} and she showed up ready to save her baby.")
+    print(f"Loni spoke with his mother who said she was on her way with a tow saucer.")
+    print(f"Loni and his mom stopped for pizza at {pizzaPlace} and got decontaminated on their way home.")
+    print(f"Loni's new {shipColor} saucer was totaled but his mom was just happy to have him home safely.")
+    print(f"THE END")
+elif meetBoy == "no" and callMom == "no":
+    print(f"Loni crawls out of his ship and decides to go exploring instead of calling his mom.")
+    print(f"Loni walks around a bit until he stumbles upon {pizzaPlace} where he decides to go in since he is starving.")
+    print(f"Loni sits down to eat a pizza and have a soda while he decides how to get home.")
+    print(f"One of the workers called and reported the alien customer to the FBI.")
+    print(f"The FBI agents come pick up Loni and take  him back to his ship where they call his mom.")
+    print(f"His mother makes a deal that they can keep his saucer in exchange for allowing her to take him home.")
+    print(f"His mom was so relived he was okay that she didn't even scold him, just hurriedly got him back home.")
+    print(f"THE END")
